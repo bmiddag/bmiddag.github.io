@@ -119,3 +119,25 @@
 		left: 0px;
 	}
 }
+
+@media screen and (min-width: 110em) {
+	.gear1 {
+		position: absolute;
+		top: 18.75px;
+		left: 62.5px;
+		background: url('../img/gear1.png') no-repeat 0 0;
+		height: 125px;
+		width: 125px;
+		background-size: 125px 125px;
+	}
+
+	.gear2 {
+		position: absolute;
+		top: 108.75px;
+		left: 35px;
+		background: url('../img/gear2.png') no-repeat 0 0;
+		height: 50px;
+		width: 50px;
+		background-size: 50px 50px;
+	}
+}
