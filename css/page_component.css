@@ -56,9 +56,9 @@
 	font-size: 2.4em;
 	line-height: 1;
 	letter-spacing: 6px;
-	margin: 0;
+	margin: auto;
 	top: 12%;
-	width: 100%;
+	width: 80%;
 	text-align: center;
 	text-transform: uppercase;
 	word-spacing: -0.3em;
@@ -79,18 +79,19 @@
 	padding: 1em 0 2em 0;
 }
 
-.page-text-wrapper {
-	width: 100%;
-}
-
 .page-image-r {
 	float: right;
+	position: relative;
+	/*z-index: -1;
+	position: absolute;
+	right: 0px;
+	top: 0px;*/
 	background: url('../img/head.png') no-repeat 0 0;
     width: 168px;
 	height: 250px;
-	margin: 15px 0 0 100px;
+	margin: 100px 100px 0 100px;
 	background-size: 168px 250px;
-	position: relative;
+	overflow: hidden;
 }
 
 .pt-page h1 span {
@@ -238,6 +239,7 @@
 		float: none;
 		width: 0px;
 		height: 0px;
+		margin: 0px 0px 0px 0px;
 		visibility: hidden;
 	}
 }
