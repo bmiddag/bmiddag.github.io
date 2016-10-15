@@ -1,0 +1,121 @@
+@-webkit-keyframes gear-moves {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes gear-moves {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes gear-moves-b {
+    0% {
+        -webkit-transform: rotate(390deg);
+    }
+    100% {
+        -webkit-transform: rotate(30deg);
+    }
+}
+@-moz-keyframes gear-moves-b {
+    0% {
+        -moz-transform: rotate(390deg);
+    }
+    100% {
+        -moz-transform: rotate(30deg);
+    }
+}
+
+/* gear1: x173 y72 44% */ /* 20 73 */
+/* gear2: x60 y153 20% */ /* */
+/* total: x236 y352 */
+
+.gear1 {
+	position: absolute;
+	top: 15px;
+	left: 50px;
+    background: url('../img/gear1.png') no-repeat 0 0;
+    height: 100px;
+    width: 100px;
+	background-size: 100px 100px;
+	
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+	
+    -moz-animation-name: gear-moves;
+    -moz-animation-duration: 5s;
+
+    -webkit-animation-name: gear-moves;
+    -webkit-animation-duration: 5s;
+}
+
+.gear2 {
+	position: absolute;
+	top: 87px;
+	left: 28px;
+    background: url('../img/gear2.png') no-repeat 0 0;
+    height: 40px;
+    width: 40px;
+	background-size: 40px 40px;
+	
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+	
+    -moz-animation-name: gear-moves-b;
+    -moz-animation-duration: 3.75s;
+
+    -webkit-animation-name: gear-moves-b;
+    -webkit-animation-duration: 3.75s;
+}
+
+@media screen and (max-width: 85em) {
+	.gear1 {
+		-moz-animation-name: none !important;
+		-webkit-animation-name: none !important;
+		animation-name: none !important;
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		top: 0px;
+		left: 0px;
+	}
+	
+	.gear2 {
+		-moz-animation-name: none !important;
+		-webkit-animation-name: none !important;
+		animation-name: none !important;
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		top: 0px;
+		left: 0px;
+	}
+}

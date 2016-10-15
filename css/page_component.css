@@ -73,10 +73,24 @@
 	/*margin: 25px; */
 	margin: auto;
 	top: 12%;
-	width: 75%;
+	width: 80%;
 	text-align: justify;
 	color: #404040;
 	padding: 1em 0 2em 0;
+}
+
+.page-text-wrapper {
+	width: 100%;
+}
+
+.page-image-r {
+	float: right;
+	background: url('../img/head.png') no-repeat 0 0;
+    width: 168px;
+	height: 250px;
+	margin: 15px 0 0 100px;
+	background-size: 168px 250px;
+	position: relative;
 }
 
 .pt-page h1 span {
@@ -216,6 +230,15 @@
 
 	.pt-triggers .dl-menuwrapper {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 85em) {
+	.page-image-r {
+		float: none;
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
 	}
 }
 
