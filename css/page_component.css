@@ -178,14 +178,13 @@
 
 @media screen and (min-width: 110em) {
 	.page-image-r {
-		margin: 10% 100px 0px 0px;
+		margin: 125px 125px 0px 0px;
 		width: 210px;
-		margin: 100px 100px 0px 0px;
 		background-size: 210px 312.5px;
 	}
 	
 	.page-text-wrapper {
-		margin-right: 310px;
+		margin-right: 335px;
 	}
 	
 	.pt-page h1 {
