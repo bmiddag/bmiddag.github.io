@@ -80,7 +80,7 @@
 	padding: 1em 0 2em 0;
 }
 
-.page-text-wrapper {
+.page-text-wrapper-l {
 	position: relative;
 	top: 0;
 	left: 0;
@@ -155,7 +155,7 @@
 		visibility: hidden;
 	}
 	
-	.page-text-wrapper {
+	.page-text-wrapper-l {
 		margin-right: 0px;
 	}
 }
@@ -183,7 +183,7 @@
 		background-size: 210px 312.5px;
 	}
 	
-	.page-text-wrapper {
+	.page-text-wrapper-l {
 		margin-right: 335px;
 	}
 	
