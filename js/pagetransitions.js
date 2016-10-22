@@ -55,6 +55,7 @@ var PageTransitions = (function() {
 		if($currPage.is($nextPage)) return false;
 		
 		isAnimating = true;
+		closeYoutube();
 		$nextPage.addClass( 'pt-page-current' );
 		current = $nextPage.index();
 		console.log($pages.children(targetPage));
@@ -79,6 +80,15 @@ var PageTransitions = (function() {
 			onEndAnimation( $currPage, $nextPage );
 		}
 
+	}
+	
+	function closeYoutube() {
+		jQuery('.youtube-player').each(function( index ){
+			thisPlayer = jQuery('.youtube-player')[index];
+			var data = {event: 'command', func: 'stopVideo', args: ""};
+			var message = JSON.stringify(data);
+			thisPlayer.contentWindow.postMessage(message, '*');
+		});
 	}
 
 	function onEndAnimation( $outpage, $inpage ) {
