@@ -2,7 +2,7 @@ var PageTransitions = (function() {
 
 	var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
-		$changePage = $( '.menu-item' ),
+		$changePage = $( '.menu-item, .inpage-link' ),
 		current = 0,
 		isAnimating = false,
 		endCurrPage = false,

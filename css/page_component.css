@@ -23,6 +23,7 @@
 	left: 0;
 	visibility: hidden;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
