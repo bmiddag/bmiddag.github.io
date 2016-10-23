@@ -222,6 +222,10 @@ body,
 	.st-footer {
 		height: 4.5625em;
 	}
+	
+	.st-container {
+		padding-bottom: 4.5625em;
+	}
 
 	.menu-band {
 		width: 331.25px;
