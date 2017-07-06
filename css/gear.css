@@ -32,18 +32,27 @@
     }
 }
 
+@-webkit-keyframes mover {
+    0% { transform: translateY(0.3em); }
+    100% { transform: translateY(-0.3em); }
+}
+@keyframes mover {
+    0% { transform: translateY(0.3em); }
+    100% { transform: translateY(-0.3em); }
+}
+
 /* gear1: x173 y72 44% */ /* 20 73 */
 /* gear2: x60 y153 20% */ /* */
 /* total: x236 y352 */
 
 .gear1 {
 	position: absolute;
-	top: 15px;
-	left: 50px;
+	top: 0.96em;
+	left: 3.2em;
     background: url('../img/gear1.png') no-repeat 0 0;
-    height: 100px;
-    width: 100px;
-	background-size: 100px 100px;
+    height: 6.4em;
+    width: 6.4em;
+	background-size: 6.4em 6.4em;
 	
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
@@ -68,12 +77,12 @@
 
 .gear2 {
 	position: absolute;
-	top: 87px;
-	left: 28px;
+	top: 5.568em; /* 87px */
+	left: 1.792em; /* 28px */
     background: url('../img/gear2.png') no-repeat 0 0;
-    height: 40px;
-    width: 40px;
-	background-size: 40px 40px;
+    height: 2.56em;
+    width: 2.56em;
+	background-size: 2.56em 2.56em;
 	
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
@@ -96,48 +105,16 @@
     -webkit-animation-duration: 3.75s;
 }
 
-@media screen and (max-width: 85em) {
-	.gear1 {
-		-moz-animation-name: none !important;
-		-webkit-animation-name: none !important;
-		animation-name: none !important;
-		position: absolute;
-		width: 0px;
-		height: 0px;
-		top: 0px;
-		left: 0px;
-	}
+.edu-top {
+	position: absolute;
+	top: 0em; /* 87px */
+	left: 0em; /* 28px */
+    height: 100%;
+    width: 100%;
+	background-size: 100%;
 	
-	.gear2 {
-		-moz-animation-name: none !important;
-		-webkit-animation-name: none !important;
-		animation-name: none !important;
-		position: absolute;
-		width: 0px;
-		height: 0px;
-		top: 0px;
-		left: 0px;
-	}
-}
-
-@media screen and (min-width: 110em) {
-	.gear1 {
-		position: absolute;
-		top: 18.75px;
-		left: 62.5px;
-		background: url('../img/gear1.png') no-repeat 0 0;
-		height: 125px;
-		width: 125px;
-		background-size: 125px 125px;
-	}
-
-	.gear2 {
-		position: absolute;
-		top: 108.75px;
-		left: 35px;
-		background: url('../img/gear2.png') no-repeat 0 0;
-		height: 50px;
-		width: 50px;
-		background-size: 50px 50px;
-	}
+    background: url('../img/edu-top.png') no-repeat 0 0;
+    -webkit-animation: mover 2s infinite  alternate;
+    -moz-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
 }

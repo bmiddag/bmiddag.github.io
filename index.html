@@ -16,10 +16,6 @@
 	</head>
 	<body>
 		<div id="st-container" class="st-container">
-			<!-- 	
-				example menus 
-				these menus will be on top of the push wrapper
-			-->
 			<nav class="st-menu" id="menu-1">
 				<div class="menu-photo"></div>
 				<div class="menu-band-wrapper">
@@ -32,12 +28,12 @@
 					</div>
 				</div>
 				<ul>
-					<li><a class="menu-item icon icon-data" href="#" page="#pg-about">About</a></li>
-					<li><a class="menu-item icon icon-location" href="#" page="#pg-education" >Education</a></li>
+					<li><a class="menu-item icon icon-data" page="#pg-about">About</a></li>
+					<li><a class="menu-item icon icon-location" page="#pg-education" >Education</a></li>
 					<!-- <li><a class="menu-item icon icon-study" href="#" page="#pg-experience" >Experience</a></li> -->
-					<li><a class="menu-item icon icon-photo" href="#" page="#pg-projects">Projects</a></li>
-					<li><a class="menu-item icon icon-location" href="#" page="#pg-skills" >Skills</a></li>
-					<li><a class="menu-item icon icon-photo" href="#" page="#pg-hobbies">Hobbies</a></li>
+					<li><a class="menu-item icon icon-photo" page="#pg-projects">Projects</a></li>
+					<li><a class="menu-item icon icon-location" page="#pg-skills" >Skills</a></li>
+					<li><a class="menu-item icon icon-photo" page="#pg-hobbies">Hobbies</a></li>
 				</ul>
 			</nav>
 
@@ -45,8 +41,8 @@
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
 						<div id="pt-main" class="pt-perspective">
-							<div id="pg-about" class="pt-page"><div class="page-content">
-								<div class="page-image-r">
+							<div id="pg-about" class="pt-page pt-page-current"><div class="page-content">
+								<div class="page-image-r bg-head">
 									<div class="gear1"></div>
 									<div class="gear2"></div>
 								</div>
@@ -60,9 +56,31 @@
 								</div>
 							</div></div>
 							<div id="pg-education" class="pt-page"><div class="page-content">
-								<h1>Education</h1>
-								<div class="page-text">
-									<p>This page is under construction, but for now, this information is available on <a href="http://be.linkedin.com/in/bartmiddag">my LinkedIn profile</a>.</p>
+								<div class="page-image-l bg-edu">
+									<div class="edu-top"></div>
+								</div>
+								<div class="page-text-wrapper-r">
+									<h1>Education</h1>
+									<div class="page-text">
+										<p>Between 2011 and 2016, I studied Computer Science Engineering at University of Ghent and completed many programming projects for a large variety of courses, some of which can be found on <a href="https://github.com/bmiddag">my Github profile</a>.</p>
+										<div class="timeline">
+											<div class="timeline-item">
+												<div class="timeline-item-time">2014 · 2016</div>
+												<div class="timeline-item-main">
+													<div class="timeline-item-title">M.Sc. in Computer Science Engineering</div>
+													<div class="timeline-item-description">University of Ghent</div>
+												</div>
+											</div>
+											<div class="timeline-item">
+												<div class="timeline-item-time">2011 · 2014</div>
+												<div class="timeline-item-main">
+													<div class="timeline-item-title">B.Sc. in Computer Science</div>
+													<div class="timeline-item-description">University of Ghent</div>
+												</div>
+											</div>
+										</div>
+										<p><strong>Elective courses</strong>: Design & development of mobile applications, document processing, programming languages, software hacking & protection, image processing, advanced multimedia applications, functional programming, computer graphics</p>
+									</div>
 								</div>
 							</div></div>
 							<div id="pg-experience" class="pt-page"><div class="page-content">
@@ -74,7 +92,26 @@
 							<div id="pg-skills" class="pt-page"><div class="page-content">
 								<h1>Skills</h1>
 								<div class="page-text">
-									<p>This page is under construction, but for now, this information is available on <a href="http://be.linkedin.com/in/bartmiddag">my LinkedIn profile</a>.</p>
+									<p>In terms of languages, I am very proficient in English, Dutch and of course various programming languages:</p>
+									<div class="skills">
+										<div class="skills-item">
+											<div class="skills-item-text"><strong>Programming languages</strong>: C#, Java, Python, C, C++</div>
+											<div class="skills-item-bar"><div class="skills-item-bar-fill" style="width: 90%;"></div></div>
+										</div>
+										<div class="skills-item">
+											<div class="skills-item-text"><strong>Game engines</strong>: Unity 3D, Game Maker</div>
+											<div class="skills-item-bar"><div class="skills-item-bar-fill" style="width: 85%;"></div></div>
+										</div>
+										<div class="skills-item">
+											<div class="skills-item-text"><strong>Web development</strong>: HTML, CSS, javascript, jQuery</div>
+											<div class="skills-item-bar"><div class="skills-item-bar-fill" style="width: 80%;"></div></div>
+										</div>
+										<div class="skills-item">
+											<div class="skills-item-text"><strong>Mobile development</strong>: Android</div>
+											<div class="skills-item-bar"><div class="skills-item-bar-fill" style="width: 65%;"></div></div>
+										</div>
+									</div>
+									<p><strong>Miscellaneous</strong>: Version control (git), agile development (scrum), design skills (Photoshop, Indesign), UI/UX design, Linux, scripting (bash, cmd), SQL, .NET, reverse-engineering, basic 3D modeling skills (3DS Max, Blender), Google Cloud Platform, Docker, node.js, Oculus VR, Bootstrap, Java Play!, procedural content generation</p>
 								</div>
 							</div></div>
 							<div id="pg-hobbies" class="pt-page"><div class="page-content">
